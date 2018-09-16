@@ -1,0 +1,37 @@
+{
+    "name": "laravel-enso/examples",
+    "description": "Examples for Laravel Enso.",
+    "keywords": [
+        "laravel-enso",
+        "examples"
+    ],
+    "homepage": "https://github.com/laravel-enso/Examples",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework": "5.7.*",
+        "laravel-enso/core": "2.15.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Examples\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Examples\\AppServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
