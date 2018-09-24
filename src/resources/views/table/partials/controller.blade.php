@@ -2,16 +2,17 @@
     v-hljs>
     <code class="php">
 
-namespace App\Http\Controllers\Examples;
+namespace LaravelEnso\Examples\app\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
+use Illuminate\Foundation\Bus\DispatchesJobs;
 use LaravelEnso\VueDatatable\app\Traits\Excel;
 use LaravelEnso\VueDatatable\app\Traits\Datatable;
-use App\Http\Controllers\Examples\Tables\Builders\ExampleTable;
+use LaravelEnso\Examples\Tables\Builders\ExampleTable;
 
 class TableController extends Controller
 {
-    use Datatable, Excel;
+    use DispatchesJobs, Datatable, Excel;
 
     protected $tableClass = ExampleTable::class;
 }

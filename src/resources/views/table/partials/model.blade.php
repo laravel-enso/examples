@@ -1,7 +1,7 @@
 <pre class="is-paddingless"
     v-hljs>
     <code class="php">
-namespace App;
+namespace LaravelEnso\Examples\app\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

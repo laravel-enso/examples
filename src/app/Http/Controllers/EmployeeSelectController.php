@@ -2,7 +2,7 @@
 
 namespace LaravelEnso\Examples\app\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use LaravelEnso\Examples\app\Models\Example;
 use LaravelEnso\Select\app\Traits\OptionsBuilder;
 

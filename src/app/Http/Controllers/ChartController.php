@@ -2,7 +2,7 @@
 
 namespace LaravelEnso\Examples\app\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller;
 use LaravelEnso\Charts\app\Classes\BarChart;
 use LaravelEnso\Charts\app\Classes\PieChart;
 use LaravelEnso\Charts\app\Classes\LineChart;
