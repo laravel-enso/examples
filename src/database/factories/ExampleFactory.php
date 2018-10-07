@@ -1,14 +1,14 @@
 <?php
 
-use LaravelEnso\Examples\app\Models\Example;
+use LaravelEnso\Examples\app\Enums\SeniorityEnum;
 
-$factory->define(Example::class, function (Faker\Generator $faker) {
+$factory->define(App\Example::class, function (Faker\Generator $faker) {
     $salary = $faker->numberBetween($min = 1100, $max = 5500);
 
     return [
         'name' => $faker->name,
         'position' => $faker->jobTitle,
-        'seniority' => $faker->numberBetween($min = 1, $max = 5),
+        'seniority' => SeniorityEnum::keys()->random(),
         'project' => $faker->randomElement(['Enso SPA', 'AdminLTE', 'Webshop']),
         'salary' => $salary,
         'taxes' => round($salary * 0.81, 2),
