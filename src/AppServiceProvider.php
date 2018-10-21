@@ -8,11 +8,6 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->publishesAll();
-    }
-
-    public function publishesAll()
-    {
         $this->publishes([
             __DIR__.'/resources/js' => resource_path('js'),
         ], 'examples-assets');
