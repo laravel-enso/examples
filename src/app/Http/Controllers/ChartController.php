@@ -31,8 +31,8 @@ class ChartController extends Controller
             ->title('Sales')
             ->labels(['Ian', 'Feb', 'Mar'])
             ->datasets([
-                'Vanzari' => [1233, 1231, 3123],
-                'Incasari' => [1250, 1730, 5300],
+                'Sales' => [1233, 1231, 3123],
+                'Spendings' => [1250, 1730, 5300],
                 'Profit' => [1250 - 1233, 1730 - 1231, 5300 - 3123],
             ])->get();
     }

@@ -3,7 +3,7 @@
     <code class="json">
 {
     "routePrefix": "examples.table",
-    "readSuffix": "data",
+    "dataRouteSuffix": "data",
     "name": "Enso Vue Datatable Example",
     "icon": ["fab", "vuejs"],
     "crtNo": true,

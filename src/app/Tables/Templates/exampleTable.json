@@ -1,6 +1,5 @@
 {
     "routePrefix": "examples.table",
-    "readSuffix": "data",
     "crtNo": true,
     "selectable": true,
     "buttons": [
