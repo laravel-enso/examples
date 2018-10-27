@@ -40,7 +40,7 @@ class ChartController extends Controller
     public function pie()
     {
         return (new PieChart())
-            ->title('Pie Chart')
+            ->title('Colors')
             ->labels(['Green', 'Red', 'Azzure'])
             ->datasets([400, 50, 100])
             ->get();
@@ -49,7 +49,7 @@ class ChartController extends Controller
     public function doughnut()
     {
         return (new DoughnutChart())
-            ->title('Doughnut Chart')
+            ->title('Colors Two')
             ->labels(['Green', 'Red', 'Azzure'])
             ->datasets([400, 50, 100])
             ->get();
@@ -58,7 +58,7 @@ class ChartController extends Controller
     public function radar()
     {
         return (new RadarChart())
-            ->title('Radar Chart')
+            ->title('Habits')
             ->labels(['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'])
             ->datasets([
             '2005' => [65, 59, 90, 81, 56, 55, 40],
@@ -69,7 +69,7 @@ class ChartController extends Controller
     public function polar()
     {
         return (new PolarChart())
-            ->title('Polar Chart')
+            ->title('Again Colors')
             ->labels(['Green', 'Red', 'Azzure', 'Portocaliu', 'Purple'])
             ->datasets([11, 16, 7, 14, 14])
             ->get();
@@ -78,7 +78,7 @@ class ChartController extends Controller
     public function bubble()
     {
         return (new BubbleChart())
-            ->title('Bubble Chart')
+            ->title('City Population by Age')
             ->labels(['Geneva', 'Besel', 'Bucharest'])
             ->datasets([
                 0 => [[1010, 59, 4800], [2011, 55, 1800], [1012, 45, 2000], [413, 58, 4400]],
