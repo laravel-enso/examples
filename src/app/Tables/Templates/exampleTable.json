@@ -1,5 +1,6 @@
 {
     "routePrefix": "examples.table",
+    "dataRouteSuffix": "data",
     "crtNo": true,
     "selectable": true,
     "buttons": [
@@ -13,7 +14,7 @@
         {
             "type": "global",
             "icon": "plus",
-            "class": "is-info",
+            "class": "is-outlined",
             "event": "create",
             "label": "Create"
         },
