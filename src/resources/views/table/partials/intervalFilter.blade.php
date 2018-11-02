@@ -4,10 +4,10 @@
 interval-filter class="box"
     title="Salary"
     type="number"
-    :min="intervals.examples.salary.min"
-    @update-min="intervals.examples.salary.min = $event"
-    :max="intervals.examples.salary.max"
-    @update-max="intervals.examples.salary.max = $event"
+    @update="
+        intervals.examples.hired_at.min = $event.min;
+        intervals.examples.hired_at.max = $event.max;
+    "
 interval-filter
     </code>
 </pre>

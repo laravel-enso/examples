@@ -75,20 +75,17 @@
                     <div class="column is-4">
                         <date-interval-filter class="box"
                             title="Hired Between"
-                            :min="intervals.examples.hired_at.min"
-                            @update-min="intervals.examples.hired_at.min = $event"
-                            :max="intervals.examples.hired_at.max"
-                            @update-max="intervals.examples.hired_at.max = $event">
+                            @update="
+                                intervals.examples.hired_at.min = $event.min;
+                                intervals.examples.hired_at.max = $event.max;
+                            ">
                         </date-interval-filter>
                     </div>
                     <div class="column is-3">
                         <interval-filter class="box"
                             title="Salary"
                             type="number"
-                            :min="intervals.examples.salary.min"
-                            @update-min="intervals.examples.salary.min = $event"
-                            :max="intervals.examples.salary.max"
-                            @update-max="intervals.examples.salary.max = $event">
+                            @update="intervals.examples.salary = $event">
                         </interval-filter>
                     </div>
                 </div>

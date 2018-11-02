@@ -3,10 +3,10 @@
     <code class="js">
 date-interval-filter class="box"
     title="Hired Between"
-    :min="intervals.examples.hired_at.min"
-    @update-min="intervals.examples.hired_at.min = $event"
-    :max="intervals.examples.hired_at.max"
-    @update-max="intervals.examples.hired_at.max = $event"
+    @update="
+        intervals.examples.hired_at.min = $event.min;
+        intervals.examples.hired_at.max = $event.max;
+    "
 date-interval-filter
     </code>
 </pre>
