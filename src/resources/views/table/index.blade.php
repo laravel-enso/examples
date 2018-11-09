@@ -4,7 +4,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
         <link rel="icon" href="/favicon.ico"/>
-        <link id="theme" rel="stylesheet" type="text/css" href="/themes/clean/bulma.min.css">
+        <link id="theme" rel="stylesheet" type="text/css" href="/themes/light/bulma.min.css">
         <link href="{{ mix('css/enso.css') }}" rel="stylesheet" type="text/css"/>
 
     </head>
