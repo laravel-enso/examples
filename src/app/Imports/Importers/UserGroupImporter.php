@@ -2,25 +2,26 @@
 
 namespace LaravelEnso\Examples\app\Imports\Importers;
 
+use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\Core\app\Models\UserGroup;
-use LaravelEnso\DataImport\app\Classes\Importers\Importer;
+use LaravelEnso\DataImport\app\Contracts\AfterHook;
+use LaravelEnso\DataImport\app\Contracts\BeforeHook;
+use LaravelEnso\DataImport\app\Contracts\Importable;
 
-class UserGroupImporter extends Importer
+class UserGroupImporter implements Importable, BeforeHook, AfterHook
 {
-    public function run()
+    public function before(Obj $params)
     {
-        \DB::transaction(function () {
-            $this->rowsFromSheet('groups')
-                ->each(function ($row) {
-                    $this->importRow($row);
-                });
-        });
+        \Log::info($params->all());
     }
 
-    private function importRow($row)
+    public function run(Obj $row)
     {
         UserGroup::create($row->toArray());
+    }
 
-        $this->incSuccess();
+    public function after(Obj $params)
+    {
+        \Log::info($params->toArray());
     }
 }
