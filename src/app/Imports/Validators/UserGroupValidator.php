@@ -2,6 +2,7 @@
 
 namespace LaravelEnso\Examples\app\Imports\Validators;
 
+use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\DataImport\app\Classes\Validators\Validator;
 
 class UserGroupValidator extends Validator
