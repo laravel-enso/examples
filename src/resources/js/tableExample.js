@@ -38,41 +38,39 @@ new Vue({
         VueTable, VueFilter, VueSelectFilter, IntervalFilter, DateIntervalFilter, Tabs, Tab,
     },
 
-    data() {
-        return {
-            showCode: false,
-            activeOptions: [
-                { value: true, label: 'check', class: 'has-text-success' },
-                { value: false, label: 'times', class: 'has-text-danger' },
-            ],
-            seniorityOptions: [
-                { id: 1, name: 'Assistant' },
-                { id: 2, name: 'Associate' },
-                { id: 3, name: 'Staff' },
-                { id: 4, name: 'Senior' },
-                { id: 5, name: 'Partner' },
-            ],
-            filters: {
-                examples: {
-                    is_active: null,
-                    seniority: [],
+    data: () => ({
+        showCode: false,
+        activeOptions: [
+            { value: true, label: 'check', class: 'has-text-success' },
+            { value: false, label: 'times', class: 'has-text-danger' },
+        ],
+        seniorityOptions: [
+            { id: 1, name: 'Assistant' },
+            { id: 2, name: 'Associate' },
+            { id: 3, name: 'Staff' },
+            { id: 4, name: 'Senior' },
+            { id: 5, name: 'Partner' },
+        ],
+        filters: {
+            examples: {
+                is_active: null,
+                seniority: [],
+            },
+        },
+        intervals: {
+            examples: {
+                hired_at: {
+                    min: null,
+                    max: null,
+                    dbDateFormat: 'Y-m-d',
+                },
+                salary: {
+                    min: null,
+                    max: null,
                 },
             },
-            intervals: {
-                examples: {
-                    hired_at: {
-                        min: null,
-                        max: null,
-                        dbDateFormat: 'Y-m-d',
-                    },
-                    salary: {
-                        min: null,
-                        max: null,
-                    },
-                },
-            },
-        };
-    },
+        },
+    }),
 
     methods: {
         clicked({ column, row }) {

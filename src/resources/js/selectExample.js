@@ -36,30 +36,28 @@ new Vue({
         VueSelect, VueSelectFilter, Tabs, Tab, VueSwitch,
     },
 
-    data() {
-        return {
-            showCode: false,
-            seniorityOptions: [
-                { id: 1, name: 'Assistant' },
-                { id: 2, name: 'Associate' },
-                { id: 3, name: 'Staff' },
-                { id: 4, name: 'Senior' },
-                { id: 5, name: 'Partner' },
-            ],
-            simple: null,
-            multiple: [],
-            simpleSS: null,
-            multipleSS: [],
-            multipleMaster: [],
-            multipleSlave: [],
-            filters: {
-                examples: {
-                    is_active: null,
-                    seniority: [],
-                },
+    data: () => ({
+        showCode: false,
+        seniorityOptions: [
+            { id: 1, name: 'Assistant' },
+            { id: 2, name: 'Associate' },
+            { id: 3, name: 'Staff' },
+            { id: 4, name: 'Senior' },
+            { id: 5, name: 'Partner' },
+        ],
+        simple: null,
+        multiple: [],
+        simpleSS: null,
+        multipleSS: [],
+        multipleMaster: [],
+        multipleSlave: [],
+        filters: {
+            examples: {
+                is_active: null,
+                seniority: [],
             },
-        };
-    },
+        },
+    }),
 
 }).$mount('#app');
 

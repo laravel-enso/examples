@@ -1,5 +1,4 @@
 <template>
-
     <div class="columns is-multiline">
         <div class="column is-one-third">
             <chart-card class="
@@ -43,7 +42,6 @@
                 source="/api/dashboard/doughnut"/>
         </div>
     </div>
-
 </template>
 
 <script>
