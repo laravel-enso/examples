@@ -57,7 +57,7 @@
             <div class="container has-margin-top-large">
                 <div class="columns">
                     <div class="column is-2">
-                        <vue-filter class="box"
+                        <vue-filter class="box raises-on-hover"
                             :options="activeOptions"
                             icons
                             title="Active"
@@ -65,7 +65,7 @@
                         </vue-filter>
                     </div>
                     <div class="column is-3">
-                        <vue-select-filter class="box"
+                        <vue-select-filter class="box raises-on-hover"
                             title="Seniority"
                             multiple
                             :options="seniorityOptions"
@@ -73,7 +73,7 @@
                         </vue-select-filter>
                     </div>
                     <div class="column is-4">
-                        <date-interval-filter class="box"
+                        <date-interval-filter class="box raises-on-hover"
                             title="Hired Between"
                             @update="
                                 intervals.examples.hired_at.min = $event.min;
@@ -82,7 +82,7 @@
                         </date-interval-filter>
                     </div>
                     <div class="column is-3">
-                        <interval-filter class="box"
+                        <interval-filter class="box raises-on-hover"
                             title="Salary"
                             type="number"
                             @update="intervals.examples.salary = $event">

@@ -15,7 +15,7 @@ class UserGroupImporter implements Importable, BeforeHook, AfterHook
         \Log::info($params->all());
     }
 
-    public function run(Obj $row)
+    public function run(Obj $row, Obj $params)
     {
         UserGroup::create($row->toArray());
     }
