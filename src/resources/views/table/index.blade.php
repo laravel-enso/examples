@@ -75,10 +75,7 @@
                     <div class="column is-4">
                         <date-interval-filter class="box raises-on-hover"
                             title="Hired Between"
-                            @update="
-                                intervals.examples.hired_at.min = $event.min;
-                                intervals.examples.hired_at.max = $event.max;
-                            ">
+                            @update="intervals.examples.hired_at = $event">
                         </date-interval-filter>
                     </div>
                     <div class="column is-3">

@@ -105,7 +105,7 @@
                     <div class="column is-4">
                         <label class="label">Inter-dependent Master</label>
                         <vue-select :options="seniorityOptions"
-                            multiple
+
                             v-model="multipleMaster">
                         </vue-select>
                     </div>
