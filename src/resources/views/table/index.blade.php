@@ -124,16 +124,16 @@
                     <tabs class="animated"
                         alignment="centered"
                         v-if="showCode">
-                        <span slot="label" slot-scope="props">
+                        <template v-slot:label="props">
                             @{{ props.tab.label }}
                             <span :class="[ 'tag', props.tab.class ]">@{{ props.tab.tag }}</span>
-                        </span>
+                        </template>
                         <tab :id="{ label: 'front end', class: 'is-info', tag: 'mixt' }">
                             <tabs alignment="centered">
-                                <span slot="label" slot-scope="props">
+                                <template v-slot:label="props">
                                     @{{ props.tab.label }}
                                     <span :class="[ 'tag', props.tab.class ]">@{{ props.tab.tag }}</span>
-                                </span>
+                                </template>
                                 <tab :id="{ label: 'vue-table', class: 'is-warning', tag: 'req' }">
                                     <div class="columns">
                                         <div class="column is-half is-offset-one-quarter">
@@ -180,10 +180,10 @@
                         </tab>
                         <tab :id="{ label: 'back end', class: 'is-info', tag: 'mixt' }">
                             <tabs alignment="centered">
-                                <span slot="label" slot-scope="props">
+                                <template v-slot:label="props">
                                     @{{ props.tab.label }}
                                     <span :class="[ 'tag', props.tab.class ]">@{{ props.tab.tag }}</span>
-                                </span>
+                                </template>
                                 <tab :id="{ label: 'routes', class: 'is-warning', tag: 'req' }">
                                     <div class="columns">
                                         <div class="column is-half is-offset-one-quarter">
@@ -233,7 +233,7 @@
                     </tabs>
                 </transition>
             </div>
-                <footer class="footer">
+            <footer class="footer">
                 <div class="container">
                     <div class="content has-text-centered">
                         <p><strong>Vue Datatable</strong> from <a href="https://laravel-enso.com">Laravel Enso</a></p>
