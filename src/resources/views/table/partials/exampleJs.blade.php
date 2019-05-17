@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import store from './store';
-import VueTable from './components/enso/vuedatatable/VueTable.vue';
+import VueTable from './components/enso/tables/VueTable.vue';
 import VueFilter from './components/enso/bulma/VueFilter.vue';
 import VueSelectFilter from './components/enso/select/VueSelectFilter.vue';
 import IntervalFilter from './components/enso/bulma/IntervalFilter.vue';

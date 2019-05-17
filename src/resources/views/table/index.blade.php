@@ -32,7 +32,7 @@
                     </div>
                     <div class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item is-hidden-desktop-only" href="https://github.com/laravel-enso/vuedatatable" target="_blank">
+                            <a class="navbar-item is-hidden-desktop-only" href="https://github.com/laravel-enso/tables" target="_blank">
                                 <span class="icon" style="color: #333;">
                                     <fa :icon="['fab', 'github']" size="lg"></fa>
                                 </span>

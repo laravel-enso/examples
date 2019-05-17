@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Examples\Tables\Builders;
 
+use LaravelEnso\Tables\app\Services\Table;
 use LaravelEnso\Examples\app\Models\Example;
-use LaravelEnso\VueDatatable\app\Classes\Table;
 
 class ExampleTable extends Table
 {
@@ -11,9 +11,9 @@ class ExampleTable extends Table
 
     public function query()
     {
-        return Example::select(\DB::raw(
-            'id as "dtRowId", name, position, seniority, project,
-            salary, taxes, is_active, hired_at'
-        ));
+        return Example::selectRaw('
+            id as "dtRowId", name, position, seniority, project,
+            salary, taxes, is_active, hired_at
+        ');
     }
 }

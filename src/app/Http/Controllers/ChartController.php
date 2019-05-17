@@ -3,19 +3,19 @@
 namespace LaravelEnso\Examples\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Charts\app\Classes\BarChart;
-use LaravelEnso\Charts\app\Classes\PieChart;
-use LaravelEnso\Charts\app\Classes\LineChart;
-use LaravelEnso\Charts\app\Classes\PolarChart;
-use LaravelEnso\Charts\app\Classes\RadarChart;
-use LaravelEnso\Charts\app\Classes\BubbleChart;
-use LaravelEnso\Charts\app\Classes\DoughnutChart;
+use LaravelEnso\Charts\app\Factories\Bar;
+use LaravelEnso\Charts\app\Factories\Pie;
+use LaravelEnso\Charts\app\Factories\Line;
+use LaravelEnso\Charts\app\Factories\Polar;
+use LaravelEnso\Charts\app\Factories\Radar;
+use LaravelEnso\Charts\app\Factories\Bubble;
+use LaravelEnso\Charts\app\Factories\Doughnut;
 
 class ChartController extends Controller
 {
     public function line()
     {
-        return (new LineChart())
+        return (new Line())
             ->title('Income')
             ->labels(['January', 'February', 'March', 'April', 'May', 'June', 'July'])
             ->datasets([
@@ -27,7 +27,7 @@ class ChartController extends Controller
 
     public function bar()
     {
-        return (new BarChart())
+        return (new Bar())
             ->title('Sales')
             ->labels(['Ian', 'Feb', 'Mar'])
             ->datasets([
@@ -39,7 +39,7 @@ class ChartController extends Controller
 
     public function pie()
     {
-        return (new PieChart())
+        return (new Pie())
             ->title('Colors')
             ->labels(['Green', 'Red', 'Azzure'])
             ->datasets([400, 50, 100])
@@ -48,7 +48,7 @@ class ChartController extends Controller
 
     public function doughnut()
     {
-        return (new DoughnutChart())
+        return (new Doughnut())
             ->title('Colors Two')
             ->labels(['Green', 'Red', 'Azzure'])
             ->datasets([400, 50, 100])
@@ -57,7 +57,7 @@ class ChartController extends Controller
 
     public function radar()
     {
-        return (new RadarChart())
+        return (new Radar())
             ->title('Habits')
             ->labels(['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'])
             ->datasets([
@@ -68,7 +68,7 @@ class ChartController extends Controller
 
     public function polar()
     {
-        return (new PolarChart())
+        return (new Polar())
             ->title('Again Colors')
             ->labels(['Green', 'Red', 'Azzure', 'Portocaliu', 'Purple'])
             ->datasets([11, 16, 7, 14, 14])
@@ -77,7 +77,7 @@ class ChartController extends Controller
 
     public function bubble()
     {
-        return (new BubbleChart())
+        return (new Bubble())
             ->title('City Population by Age')
             ->labels(['Geneva', 'Besel', 'Bucharest'])
             ->datasets([

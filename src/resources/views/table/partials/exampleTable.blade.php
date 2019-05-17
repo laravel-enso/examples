@@ -4,7 +4,7 @@
 namespace App\Http\Controllers\Examples\Tables\Builders;
 
 use App\Example;
-use LaravelEnso\VueDatatable\app\Classes\Table;
+use LaravelEnso\Tables\app\Services\Table;
 
 class ExampleTable extends Table
 {
@@ -12,10 +12,10 @@ class ExampleTable extends Table
 
     public function query()
     {
-        return Example::select(\DB::raw(
-            'id as "dtRowId", name, position, seniority, project,
-            salary, taxes, is_active, hired_at'
-        ));
+        return Example::selectRaw('
+            id as "dtRowId", name, position, seniority, project,
+            salary, taxes, is_active, hired_at
+        ');
     }
 }
     </code>
