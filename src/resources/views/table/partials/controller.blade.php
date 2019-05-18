@@ -5,14 +5,14 @@
 namespace LaravelEnso\Examples\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use Illuminate\Foundation\Bus\DispatchesJobs;
-use LaravelEnso\Tables\app\Traits\Excel;
 use LaravelEnso\Tables\app\Traits\Datatable;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use LaravelEnso\Tables\app\Traits\ExcelExport;
 use LaravelEnso\Examples\Tables\Builders\ExampleTable;
 
 class TableController extends Controller
 {
-    use DispatchesJobs, Datatable, Excel;
+    use DispatchesJobs, Datatable, ExcelExport;
 
     protected $tableClass = ExampleTable::class;
 }
