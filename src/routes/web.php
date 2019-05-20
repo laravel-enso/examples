@@ -13,7 +13,7 @@ Route::middleware(['web'])
                     ->name('init');
                 Route::get('data', 'TableController@data')
                     ->name('data');
-                Route::get('exportExcel', 'TableController@exportExcel')
+                Route::get('exportExcel', 'TableController')
                     ->name('exportExcel');
             });
 
