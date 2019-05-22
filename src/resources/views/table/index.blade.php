@@ -11,6 +11,7 @@
     <body>
 
         <div id="app"
+            dir="ltr"
             v-cloak>
             <nav class="navbar has-bottom-top-large" role="navigation" aria-label="main navigation">
                 <div class="container">

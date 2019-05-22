@@ -22,7 +22,7 @@ Route::middleware(['web'])
 
         Route::prefix('select')->as('select.')
             ->group(function () {
-                Route::get('employee', 'EmployeeSelectController@options')
+                Route::get('employee', 'EmployeeSelectController')
                     ->name('employee');
             });
     });
