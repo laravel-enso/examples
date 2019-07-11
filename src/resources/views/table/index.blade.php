@@ -76,14 +76,17 @@
                     <div class="column is-4">
                         <date-interval-filter class="box raises-on-hover"
                             title="Hired Between"
-                            @update="intervals.examples.hired_at = $event">
+                            @update="
+                                intervals.examples.hired_at.min = $event.min;
+                                intervals.examples.hired_at.max = $event.max
+                            ">
                         </date-interval-filter>
                     </div>
                     <div class="column is-3">
                         <interval-filter class="box raises-on-hover"
                             title="Salary"
                             type="number"
-                            @update="intervals.examples.salary = $event">
+                            v-model="intervals.examples.salary">
                         </interval-filter>
                     </div>
                 </div>
