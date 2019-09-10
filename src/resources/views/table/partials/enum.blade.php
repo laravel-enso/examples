@@ -3,7 +3,7 @@
     <code class="php">
 namespace App\Enums\Examples;
 
-use LaravelEnso\Helpers\app\Classes\Enum;
+use LaravelEnso\Enums\app\Services\Enum;
 
 class SeniorityEnum extends Enum
 {

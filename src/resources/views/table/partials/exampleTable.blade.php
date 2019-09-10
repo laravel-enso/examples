@@ -13,8 +13,7 @@ class ExampleTable extends Table
     public function query()
     {
         return Example::selectRaw('
-            id as "dtRowId", name, position, seniority, project,
-            salary, taxes, is_active, hired_at
+            id, name, position, seniority, project, salary, taxes, is_active, hired_at
         ');
     }
 }
