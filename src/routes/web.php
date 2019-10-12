@@ -9,12 +9,9 @@ Route::middleware(['web'])
 
         Route::prefix('table')->as('table.')
             ->group(function () {
-                Route::get('init', 'TableController@init')
-                    ->name('init');
-                Route::get('data', 'TableController@data')
-                    ->name('data');
-                Route::get('exportExcel', 'TableController')
-                    ->name('exportExcel');
+                Route::get('init', 'TableInit')->name('init');
+                Route::get('data', 'TableData')->name('data');
+                Route::get('exportExcel', 'TableExcel')->name('exportExcel');
             });
 
         Route::view('select', 'laravel-enso/examples::select.index')

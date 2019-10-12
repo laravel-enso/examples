@@ -3,13 +3,12 @@
 namespace LaravelEnso\Examples\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\Tables\app\Traits\Excel;
-use LaravelEnso\Tables\app\Traits\Datatable;
+use LaravelEnso\Tables\app\Traits\Init;
 use LaravelEnso\Examples\Tables\Builders\ExampleTable;
 
-class TableController extends Controller
+class TableInit extends Controller
 {
-    use Datatable, Excel;
+    use Init;
 
     protected $tableClass = ExampleTable::class;
 }

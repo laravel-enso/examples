@@ -2,17 +2,23 @@
 
 namespace LaravelEnso\Examples\Tables\Builders;
 
-use LaravelEnso\Tables\app\Services\Table;
+use Illuminate\Database\Eloquent\Builder;
+use LaravelEnso\Tables\app\Contracts\Table;
 use LaravelEnso\Examples\app\Models\Example;
 
-class ExampleTable extends Table
+class ExampleTable implements Table
 {
-    protected $templatePath = __DIR__.'/../Templates/exampleTable.json';
+    protected const TemplatePath = __DIR__.'/../Templates/exampleTable.json';
 
-    public function query()
+    public function query(): Builder
     {
         return Example::selectRaw('
             id, name, position, seniority, project, salary, taxes, is_active, hired_at
         ');
+    }
+
+    public function templatePath(): string
+    {
+        return static::TemplatePath;
     }
 }
