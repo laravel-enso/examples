@@ -2,7 +2,7 @@
     v-hljs>
     <code class="js">
 interval-filter class="box"
-    title="Salary"
+    label="Salary"
     type="number"
     @update="
         intervals.examples.hired_at.min = $event.min;

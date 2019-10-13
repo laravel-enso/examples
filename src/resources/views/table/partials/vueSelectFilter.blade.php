@@ -2,7 +2,7 @@
     v-hljs>
     <code class="js">
 vue-select-filter class="box"
-    title="Seniority"
+    label="Seniority"
     multiple
     :options="seniorityOptions"
     v-model="filters.examples.seniority"

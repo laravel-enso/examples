@@ -4,7 +4,7 @@
 vue-filter class="box"
     :options="activeOptions"
     icons
-    title="Active"
+    label="Active"
     v-model="filters.examples.is_active"
 vue-filter
     </code>
