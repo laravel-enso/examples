@@ -3,8 +3,8 @@
 namespace LaravelEnso\Examples\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\Tables\app\Contracts\Table;
 use LaravelEnso\Examples\app\Models\Example;
+use LaravelEnso\Tables\app\Contracts\Table;
 
 class ExampleTable implements Table
 {

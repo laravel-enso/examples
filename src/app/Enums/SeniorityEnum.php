@@ -6,11 +6,11 @@ use LaravelEnso\Enums\app\Services\Enum;
 
 class SeniorityEnum extends Enum
 {
-    const Assistant = 1;
-    const Associate = 2;
-    const Staff = 3;
-    const Senior = 4;
-    const Partner = 5;
+    public const Assistant = 1;
+    public const Associate = 2;
+    public const Staff = 3;
+    public const Senior = 4;
+    public const Partner = 5;
 
     protected static $data = [
         self::Assistant => 'assistant',
