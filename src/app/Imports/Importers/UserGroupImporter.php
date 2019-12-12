@@ -2,11 +2,11 @@
 
 namespace LaravelEnso\Examples\app\Imports\Importers;
 
-use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\Core\app\Models\UserGroup;
 use LaravelEnso\DataImport\app\Contracts\AfterHook;
 use LaravelEnso\DataImport\app\Contracts\BeforeHook;
 use LaravelEnso\DataImport\app\Contracts\Importable;
+use LaravelEnso\Helpers\app\Classes\Obj;
 
 class UserGroupImporter implements Importable, BeforeHook, AfterHook
 {

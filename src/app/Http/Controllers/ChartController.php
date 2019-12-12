@@ -4,12 +4,12 @@ namespace LaravelEnso\Examples\app\Http\Controllers;
 
 use Illuminate\Routing\Controller;
 use LaravelEnso\Charts\app\Factories\Bar;
-use LaravelEnso\Charts\app\Factories\Pie;
-use LaravelEnso\Charts\app\Factories\Line;
-use LaravelEnso\Charts\app\Factories\Polar;
-use LaravelEnso\Charts\app\Factories\Radar;
 use LaravelEnso\Charts\app\Factories\Bubble;
 use LaravelEnso\Charts\app\Factories\Doughnut;
+use LaravelEnso\Charts\app\Factories\Line;
+use LaravelEnso\Charts\app\Factories\Pie;
+use LaravelEnso\Charts\app\Factories\Polar;
+use LaravelEnso\Charts\app\Factories\Radar;
 
 class ChartController extends Controller
 {
@@ -61,8 +61,8 @@ class ChartController extends Controller
             ->title('Habits')
             ->labels(['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'])
             ->datasets([
-            '2005' => [65, 59, 90, 81, 56, 55, 40],
-            '2006' => [28, 48, 40, 19, 96, 27, 100],
+                '2005' => [65, 59, 90, 81, 56, 55, 40],
+                '2006' => [28, 48, 40, 19, 96, 27, 100],
             ])->get();
     }
 

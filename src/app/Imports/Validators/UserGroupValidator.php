@@ -2,8 +2,8 @@
 
 namespace LaravelEnso\Examples\app\Imports\Validators;
 
-use LaravelEnso\Helpers\app\Classes\Obj;
 use LaravelEnso\DataImport\app\Services\Validators\Validator;
+use LaravelEnso\Helpers\app\Classes\Obj;
 
 class UserGroupValidator extends Validator
 {
@@ -11,5 +11,7 @@ class UserGroupValidator extends Validator
     {
         // do custom validation logic
         // $this->addError(string $error) to register errors as many times as you need
+
+        \Log::info($row);
     }
 }
